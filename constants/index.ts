@@ -41,6 +41,7 @@ export const manufacturers = [
   "Volkswagen",
   "Volvo",
 ];
+
 export const yearsOfProduction = [
   { title: "Year", value: "" },
   { title: "2015", value: "2015" },
@@ -66,5 +67,35 @@ export const fuels = [
   {
     title: "Electricity",
     value: "Electricity",
+  },
+];
+
+export const footerLinks = [
+  {
+    title: "About",
+    links: [
+      { title: "How it works", url: "/" },
+      { title: "Featured", url: "/" },
+      { title: "Partnership", url: "/" },
+      { title: "Bussiness Relation", url: "/" },
+    ],
+  },
+  {
+    title: "Company",
+    links: [
+      { title: "Events", url: "/" },
+      { title: "Blog", url: "/" },
+      { title: "Podcast", url: "/" },
+      { title: "Invite a friend", url: "/" },
+    ],
+  },
+  {
+    title: "Socials",
+    links: [
+      { title: "LinkedIn", url: "https://www.linkedin.com/in/md-jihad-8685a424a/" },
+      { title: "Instagram", url: "https://www.instagram.com/mohammad__jihad_/" },
+      { title: "Twitter", url: "https://twitter.com/MdJihad80981458" },
+      { title: "GitHub", url: "https://github.com/Jihad7518" },
+    ],
   },
 ];
