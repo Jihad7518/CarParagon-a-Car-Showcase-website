@@ -27,7 +27,6 @@ export interface HomeProps {
   searchParams: FilterProps;
 }
 
-
 export interface CarCardProps {
   model: string;
   make: string;
@@ -61,4 +60,9 @@ export interface CustomFilterProps {
 export interface ShowMoreProps {
   pageNumber: number;
   isNext: boolean;
+}
+
+export interface SearchManuFacturerProps {
+  manufacturer: string;
+  setManuFacturer: (manufacturer: string) => void;
 }
