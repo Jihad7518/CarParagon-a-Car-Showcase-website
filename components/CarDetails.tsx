@@ -26,6 +26,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => (
         >
           <div className='fixed inset-0 bg-black bg-opacity-25' />
         </Transition.Child>
+
         <div className='fixed inset-0 overflow-y-auto'>
           <div className='flex min-h-full items-center justify-center p-4 text-center'>
             <Transition.Child
@@ -56,7 +57,8 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => (
                   <div className='relative w-full h-40 bg-pattern bg-cover bg-center rounded-lg'>
                     <Image src={generateCarImageUrl(car)} alt='car model' fill priority className='object-contain' />
                   </div>
- <div className='flex gap-3'>
+
+                  <div className='flex gap-3'>
                     <div className='flex-1 relative w-full h-24 bg-primary-blue-100 rounded-lg'>
                       <Image src={generateCarImageUrl(car, "29")} alt='car model' fill priority className='object-contain' />
                     </div>
@@ -87,3 +89,13 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => (
                     ))}
                   </div>
                 </div>
+              </Dialog.Panel>
+            </Transition.Child>
+          </div>
+        </div>
+      </Dialog>
+    </Transition>
+  </>
+);
+
+export default CarDetails;
