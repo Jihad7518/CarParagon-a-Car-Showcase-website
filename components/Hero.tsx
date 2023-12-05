@@ -12,6 +12,7 @@ const Hero = () => {
       nextSection.scrollIntoView({ behavior: "smooth" });
     }
   };
+
   return (
     <div className="hero">
       <div className="flex-1 pt-36 padding-x">
@@ -39,3 +40,5 @@ const Hero = () => {
     </div>
   );
 };
+
+export default Hero;
