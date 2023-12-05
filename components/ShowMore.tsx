@@ -18,3 +18,19 @@ const ShowMore = ({ pageNumber, isNext }: ShowMoreProps) => {
     
     router.push(newPathname);
   };
+
+  return (
+    <div className="w-full flex-center gap-5 mt-10">
+      {!isNext && (
+        <CustomButton
+          btnType="button"
+          title="Show More"
+          containerStyles="bg-blue-900 rounded-full text-white"
+          handleClick={handleNavigation}
+        />
+      )}
+    </div>
+  );
+};
+
+export default ShowMore;
