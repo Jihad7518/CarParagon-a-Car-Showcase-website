@@ -18,6 +18,7 @@ export default function CustomFilter({ title, options }: CustomFilterProps) {
 
     router.push(newPathName);
   };
+
   return (
     <div className='w-fit'>
       <Listbox
@@ -52,3 +53,19 @@ export default function CustomFilter({ title, options }: CustomFilterProps) {
                   }
                   value={option}
                 >
+                  {({ selected }) => (
+                    <>
+                      <span className={`block truncate ${selected ? "font-medium" : "font-normal"}`} >
+                        {option.title}
+                      </span>
+                    </>
+                  )}
+                </Listbox.Option>
+              ))}
+            </Listbox.Options>
+          </Transition>
+        </div>
+      </Listbox>
+    </div>
+  );
+}
