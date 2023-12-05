@@ -15,3 +15,14 @@ const NavBar = () => (
           className='object-contain'
         />
       </Link>
+
+      <CustomButton
+        title='Sign in'
+        btnType='button'
+        containerStyles='text-blue-900 rounded-full bg-white min-w-[130px]'
+      />
+    </nav>
+  </header>
+);
+
+export default NavBar;
